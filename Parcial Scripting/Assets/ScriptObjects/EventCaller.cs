@@ -7,9 +7,12 @@ using UnityEngine.Events;
 public class EventCaller : ScriptableObject
 {
     [SerializeField] List<AudioClip> audioClips = new List<AudioClip>();
+    public AudioClip songToPlay;
+    public event UnityAction<AudioClip> songChanged;
     //public bool pausa =false;
     public event UnityAction _pause;
     public event UnityAction _resume;
+
 
     public void Pause() {
       //  pausa = true;
@@ -19,5 +22,9 @@ public class EventCaller : ScriptableObject
         //pausa = false;
         _resume?.Invoke();
     }
-
+    public void songChange()
+    {
+        songToPlay = audioClips[Random.Range(0, audioClips.Capacity)];
+        songChanged.Invoke(songToPlay);  
+    }
 }
