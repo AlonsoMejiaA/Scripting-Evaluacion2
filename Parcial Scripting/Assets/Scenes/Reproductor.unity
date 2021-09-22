@@ -211,7 +211,7 @@ GameObject:
   - component: {fileID: 967070191}
   - component: {fileID: 967070190}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Pausa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -343,13 +343,14 @@ GameObject:
   - component: {fileID: 1020795454}
   - component: {fileID: 1020795453}
   - component: {fileID: 1020795452}
+  - component: {fileID: 1020795455}
   m_Layer: 5
   m_Name: Play
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1020795451
 RectTransform:
   m_ObjectHideFlags: 0
@@ -416,7 +417,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 11400000, guid: 071dc0db85a18a848bf15a974370cc93, type: 2}
         m_TargetAssemblyTypeName: EventCaller, Assembly-CSharp
-        m_MethodName: Nopausa
+        m_MethodName: Curso
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -464,6 +465,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1020795450}
   m_CullTransparentMesh: 1
+--- !u!114 &1020795455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020795450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b1a32809da92d045a9ca7f4fbd8f390, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventos: {fileID: 11400000, guid: 071dc0db85a18a848bf15a974370cc93, type: 2}
+  encurso: {fileID: 1020795450}
 --- !u!1 &1272343524
 GameObject:
   m_ObjectHideFlags: 0
@@ -954,6 +969,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1609277074}
   - component: {fileID: 1609277073}
+  - component: {fileID: 1609277075}
   m_Layer: 0
   m_Name: Reproductor
   m_TagString: Untagged
@@ -971,7 +987,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 014005527e2b0e44ba09e72387f6e5dd, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1071,6 +1087,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1609277075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1609277072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f767312796f369641a0e74d884e28743, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audio: {fileID: 0}
+  eventos: {fileID: 11400000, guid: 071dc0db85a18a848bf15a974370cc93, type: 2}
 --- !u!1 &1634475820
 GameObject:
   m_ObjectHideFlags: 0

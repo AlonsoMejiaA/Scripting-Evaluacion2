@@ -7,16 +7,17 @@ using UnityEngine.Events;
 public class EventCaller : ScriptableObject
 {
     [SerializeField] List<AudioClip> audioClips = new List<AudioClip>();
-    public bool pausa =false;
-    public event UnityAction<bool> _pausa;
+    //public bool pausa =false;
+    public event UnityAction _pausa;
+    public event UnityAction _curso;
 
     public void Pausa() {
-        pausa = true;
-        _pausa?.Invoke(pausa);
+      //  pausa = true;
+        _pausa?.Invoke();
     }
-    public void Nopausa() {
-        pausa = false;
-        _pausa.Invoke(pausa);
+    public void Curso() {
+        //pausa = false;
+        _curso?.Invoke();
     }
 
 }
