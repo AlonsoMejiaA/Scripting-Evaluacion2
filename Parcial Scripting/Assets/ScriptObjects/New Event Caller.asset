@@ -12,4 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 356a80b9c7221d54387cd9963f7a0470, type: 3}
   m_Name: New Event Caller
   m_EditorClassIdentifier: 
-  audioClips: []
+  audioClips:
+  - {fileID: 8300000, guid: 014005527e2b0e44ba09e72387f6e5dd, type: 3}
+  - {fileID: 8300000, guid: a4f13b83046f8724eb4adfa7371aebce, type: 3}
+  - {fileID: 8300000, guid: c14edda776ee90e43b24d92e13a807d3, type: 3}
