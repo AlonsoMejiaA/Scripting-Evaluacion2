@@ -4,33 +4,33 @@ using UnityEngine;
 
 public class Reproductor : MonoBehaviour
 {  
-    public AudioSource audio;
-    IReproductorState estado;
-    [SerializeField]EventCaller eventos;
+    private AudioSource audio;
+    IReproductorState states;
+    [SerializeField]EventCaller events;
 
     private void Awake() {
         audio = GetComponent<AudioSource>();      
     }
     private void OnEnable() {
-        eventos._pausa += PararCancion;
-        eventos._curso += ReproducirCancion;
+        events._pause += PararCancion;
+        events._resume += ReproducirCancion;
     }
     private void OnDisable() {
-        eventos._pausa -= PararCancion;
-        eventos._curso -= ReproducirCancion;
+        events._pause -= PararCancion;
+        events._resume -= ReproducirCancion;
     }
     private void Start() {
-        estado = new EncursoState();
-        estado.Ejecutar(this);
+        states = new EncursoState();
+        states.Ejecutar(this);
     }
     public void ReproducirCancion() {
-        estado = new EncursoState();
-        estado.Ejecutar(this);
+        states = new EncursoState();
+        states.Ejecutar(this);
     }
 
     public void PararCancion() {
-        estado = new EnpausaState();
-        estado.Ejecutar(this);
+        states = new EnpausaState();
+        states.Ejecutar(this);
     }
     
 }

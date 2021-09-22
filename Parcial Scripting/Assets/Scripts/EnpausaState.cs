@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnpausaState : IReproductorState
 {   
     public void Ejecutar(Reproductor reproductor) {
-        reproductor.audio.Pause();
+        reproductor.GetComponent<AudioSource>().Pause();
     }
 
    

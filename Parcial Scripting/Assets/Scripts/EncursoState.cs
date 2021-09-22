@@ -4,6 +4,6 @@ using UnityEngine;
 
 public class EncursoState : IReproductorState {
     public void Ejecutar(Reproductor reproductor) {
-        reproductor.audio.Play();
+        reproductor.GetComponent<AudioSource>().Play();
     }
 }

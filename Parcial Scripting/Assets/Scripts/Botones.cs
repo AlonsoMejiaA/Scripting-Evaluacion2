@@ -3,20 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Botones : MonoBehaviour {
-    [SerializeField] EventCaller eventos;
-    [SerializeField] GameObject encurso;
+    [SerializeField] EventCaller events;
+    [SerializeField] GameObject oncourse;
 
     private void Awake() {
-        eventos._pausa += Aparecer;
-        eventos._curso += Desaparecer;
+        events._pause += Aparecer;
+        events._resume += Desaparecer;
        
-        encurso.SetActive(false);
+        oncourse.SetActive(false);
     }
 
     void Aparecer() {
-        encurso.SetActive(true);
+        oncourse.SetActive(true);
     }
     void Desaparecer() {
-        encurso.SetActive(false);
+        oncourse.SetActive(false);
     }
 }

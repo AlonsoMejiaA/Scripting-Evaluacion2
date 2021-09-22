@@ -8,16 +8,16 @@ public class EventCaller : ScriptableObject
 {
     [SerializeField] List<AudioClip> audioClips = new List<AudioClip>();
     //public bool pausa =false;
-    public event UnityAction _pausa;
-    public event UnityAction _curso;
+    public event UnityAction _pause;
+    public event UnityAction _resume;
 
-    public void Pausa() {
+    public void Pause() {
       //  pausa = true;
-        _pausa?.Invoke();
+        _pause?.Invoke();
     }
-    public void Curso() {
+    public void Resume() {
         //pausa = false;
-        _curso?.Invoke();
+        _resume?.Invoke();
     }
 
 }
