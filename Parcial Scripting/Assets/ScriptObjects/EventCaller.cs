@@ -13,6 +13,13 @@ public class EventCaller : ScriptableObject
     public event UnityAction _pause;
     public event UnityAction _resume;
 
+    //not repeating song
+    public AudioClip currentSong;
+
+    private void Awake()
+    {
+        currentSong = audioClips[Random.Range(0, audioClips.Capacity)];
+    }
 
     public void Pause() {
       //  pausa = true;
@@ -24,7 +31,17 @@ public class EventCaller : ScriptableObject
     }
     public void songChange()
     {
+        
         songToPlay = audioClips[Random.Range(0, audioClips.Capacity)];
-        songChanged.Invoke(songToPlay);  
+        if (songToPlay.name == currentSong.name)
+        {
+            songChange();
+        }
+        else
+        {
+            currentSong = songToPlay;
+            songChanged.Invoke(songToPlay);
+        }
+        
     }
 }

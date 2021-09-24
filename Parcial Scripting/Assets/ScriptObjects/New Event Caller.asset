@@ -18,4 +18,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: c14edda776ee90e43b24d92e13a807d3, type: 3}
   - {fileID: 8300000, guid: 379ad56f4355e224fa87be5158c65256, type: 3}
   - {fileID: 8300000, guid: 0ce27ba9ac9100d4a82b610fee86913f, type: 3}
-  songToPlay: {fileID: 0}
+  - {fileID: 8300000, guid: a7ab03979e3b95e4084d1ad375850593, type: 3}
+  songToPlay: {fileID: 8300000, guid: 379ad56f4355e224fa87be5158c65256, type: 3}
+  currentSong: {fileID: 8300000, guid: 379ad56f4355e224fa87be5158c65256, type: 3}
