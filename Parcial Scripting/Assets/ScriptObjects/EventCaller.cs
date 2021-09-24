@@ -16,7 +16,7 @@ public class EventCaller : ScriptableObject
     //not repeating song
     public AudioClip currentSong;
 
-    private void Awake()
+     void Awake()
     {
         currentSong = audioClips[Random.Range(0, audioClips.Capacity)];
     }

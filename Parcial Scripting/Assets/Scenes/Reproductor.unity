@@ -331,16 +331,16 @@ MonoBehaviour:
   Reproductor: {fileID: 0}
   bias: 10
   timeStep: 0.15
-  timeToBeat: 0.05
+  timeToBeat: 0.2
   restSmoothTime: 4
   previousAudioValue: 0
   audioValue: 0
   beatColors:
-  - {r: 0.11725702, g: 0.8018868, b: 0.15479729, a: 1}
-  - {r: 1, g: 0.52179044, b: 0, a: 1}
-  - {r: 0.9528302, g: 0.05842829, b: 0.7952819, a: 1}
-  - {r: 0.8490566, g: 0.76977724, b: 0.10012458, a: 1}
-  restColor: {r: 0.8962264, g: 0.8962264, b: 0.8962264, a: 1}
+  - {r: 0.24048387, g: 0.06652725, b: 0.6132076, a: 1}
+  - {r: 0.5033906, g: 0.32549024, b: 1, a: 1}
+  - {r: 1, g: 0.48102972, b: 0.25943398, a: 1}
+  - {r: 0.8867924, g: 0.5348907, b: 0, a: 1}
+  restColor: {r: 0.8632076, g: 0.988105, b: 1, a: 1}
 --- !u!1 &967070188
 GameObject:
   m_ObjectHideFlags: 0
@@ -1364,7 +1364,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 014005527e2b0e44ba09e72387f6e5dd, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 67d584a095294fa43aa0a413c186dfb9, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

@@ -13,11 +13,20 @@ MonoBehaviour:
   m_Name: New Event Caller
   m_EditorClassIdentifier: 
   audioClips:
+  - {fileID: 8300000, guid: 67d584a095294fa43aa0a413c186dfb9, type: 3}
   - {fileID: 8300000, guid: 014005527e2b0e44ba09e72387f6e5dd, type: 3}
   - {fileID: 8300000, guid: a4f13b83046f8724eb4adfa7371aebce, type: 3}
   - {fileID: 8300000, guid: c14edda776ee90e43b24d92e13a807d3, type: 3}
   - {fileID: 8300000, guid: 379ad56f4355e224fa87be5158c65256, type: 3}
   - {fileID: 8300000, guid: 0ce27ba9ac9100d4a82b610fee86913f, type: 3}
   - {fileID: 8300000, guid: a7ab03979e3b95e4084d1ad375850593, type: 3}
-  songToPlay: {fileID: 8300000, guid: 379ad56f4355e224fa87be5158c65256, type: 3}
-  currentSong: {fileID: 8300000, guid: 379ad56f4355e224fa87be5158c65256, type: 3}
+  - {fileID: 8300000, guid: bf93d03502c889444ae5a4fdac2cf5ea, type: 3}
+  - {fileID: 8300000, guid: fe4795ec4053e78459a29fc859b4c9c7, type: 3}
+  - {fileID: 8300000, guid: 847c1d836f374ac46982aa147adf89a2, type: 3}
+  - {fileID: 8300000, guid: d81cb48a21e9bfc42bd9168763642d28, type: 3}
+  - {fileID: 8300000, guid: 71ab93ac4b7ff25458247431f126c81b, type: 3}
+  - {fileID: 8300000, guid: 99071afe41349b648ae94acb69e97af9, type: 3}
+  - {fileID: 8300000, guid: 42861c638d18ebe4fbf1f9d1b357fa16, type: 3}
+  - {fileID: 8300000, guid: 1e3ed597d6b59084088568119d624838, type: 3}
+  songToPlay: {fileID: 8300000, guid: 1e3ed597d6b59084088568119d624838, type: 3}
+  currentSong: {fileID: 8300000, guid: 1e3ed597d6b59084088568119d624838, type: 3}
